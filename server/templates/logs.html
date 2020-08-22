@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logs</title>
+</head>
+<body>
+<br>
+{% for log in logs %}
+<div><i>{{ log['timestamp'] }}</i>&nbsp;{{ log['device_id'] }}&nbsp;{{ log['msg'] }}</div>
+{% endfor %}
+</body>
+</html>
